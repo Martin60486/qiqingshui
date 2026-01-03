@@ -1,0 +1,240 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url("../images/vancouver.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fffffb; /* Add a color that matches the image */
+    background-blend-mode: multiply;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: brown;
+    margin: 0;  /*new*/
+    padding: 0; /*new*/
+}
+/* Logo */
+.logo-image {
+    position: absolute;
+    top: 20px; /*top position from the upper border of containter*/
+    left: 20px; /*left position from the left border of container */
+    height: 100px !important; /* width will adjust according to ratio of the original image */
+    width: auto !important;
+    max-width: none !important;
+}
+
+/* Text Styling */
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+.text-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0; /* space between two elements, pushing two elements apart */
+    padding-top: 0px;
+    color: #1c0e05;
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+
+.text-content p {
+    margin-top: -5px;
+    font-size: 24px;
+    margin-top: 0px;
+    color: #1c0d04; /* #1b0c03f1, #1c0d04*/
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+/* About Section */
+.about {
+    background-color: #dce5ea;
+    padding: 20px 20px; /*1: four directions; 2: first top & bottom, 2nd left and right; 4: top, right, bottom, left*/
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    text-align: left;
+}
+
+.about-content {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image {
+    max-width: 200px;
+    height: auto;
+}
+/* Service Section */
+.services {
+    background-color: #d9c9bfe4;
+    padding-left: 40px;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    align-items: center;
+    background-color: #dce5ea;
+    color: black;
+    padding: 20px;
+    text-align: left;
+}
+.contact-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-image {
+    max-width: 150px;
+    height: auto;
+    margin-right: 10px;/* Space between image and heading */
+}
+
+.contact-info {
+    flex-direction: column;
+}
+
+.contact-info h2 {
+    margin: 0;
+}
+.contact-info p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.email-link {
+    color: black; /* Regular color */
+    text-decoration: none; /* Remove underline by default */
+    font-weight: bold;
+}
+
+.email-link:hover {
+    color: blue; /* Change color on hover */
+    text-decoration: underline; /* Optional: add underline on hover */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    body {
+        overflow-x: hidden; /* Prevents horizontal scrolling but allows vertical scrolling */
+    }
+
+    .banner {
+        background-size: cover;
+        background-color: #fffffb;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 40vh; /* Set a smaller height for mobile */  
+        width: 100vw; /* new Full width of the viewport */
+    }
+
+    .logo-image {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 24px;
+    }
+    .text-content {
+        margin-top: 0px;
+        padding-top: 0px;
+     
+    }
+
+    .text-content h1, .banner h1 {
+        font-size: 28px;
+        margin-top: -30px;
+        margin-bottom: 5px;
+    }
+
+    .banner p {
+        font-size: 18px;
+        margin-top: -13px;
+        line-height: 1; /* Adjust the line height to reduce spacing */
+    }
+    
+    /* About Section */
+    .about {
+        display: block; /* Switch to block layout on mobile */
+    }
+
+    .about-content {
+        display: block;/* Disable flex on mobile */
+    }
+
+    .about-image {
+        width: 40%; /* Image width for mobile; adjust as needed */
+        float: left; /* Float the image to make text wrap around it */
+        margin-right: 10px; /* Space between image and text */
+        margin-bottom: 10px; /* Adds space at the bottom of the image */
+    }
+
+    .about-content p {
+        display: block;
+        width: 100%;
+        text-align: left; /* Optional: align text to the left */
+    }
+    .text-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-content {
+        align-items: center;  /* vertically */
+        text-align: left;
+        margin: auto;
+    }
+
+     /* Contact Section */
+     .contact {
+        flex-direction: column; /* Stack header and info vertically */
+        padding: 20px;
+        text-align: center; /* Optional: center-aligns text on mobile */
+    
+    }
+
+    .contact-header {
+        display: flex;
+        align-items: flex-start; /* Align items to the top-left */
+        justify-content: flex-start; /* Align content to the left */
+        width: 100%;
+        margin-bottom: 10px; /* Space between header and contact info */
+        align-items: center; /*vertically*/
+        margin-left: 5px;
+    }
+
+    .contact-image {
+        width: 30%; /* Adjust percentage as needed for mobile */
+        margin-right: 10px; /* Space between image and heading on mobile */
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info p {
+        margin-top: 10px;
+        text-align: left; /* Optional: aligns text to the left */
+        font-weight: bold;
+    }
+}
+
