@@ -10,7 +10,7 @@ keywords: Traditional, Chinese, Medicine, Acupuncture, Herbal, Therapy
     <div class="about-content">
         <img src="{{ '/assets/images/accounting.jpg' | relative_url }}" alt="Accounting Image" class="about-image">
         <p>
-            A trusted CPA firm in Vancouver, we provide reliable and efficient accounting and tax services tailored to meet the unique needs of corporations, trusts, and individuals. With expertise in English and Chinese, we are here to support your financial success.
+            七清水是一种传统的中草药，由中国山区的野生草本植物制成。苗族人已经用了数代人。苗族祖先狩猎时观察到受伤的动物将咀嚼过的草药混合物涂在开放的伤口上，以加速伤口的愈合。七清水最初就是这样被发现的。七清水有助于改善血液循环，排毒，溶解和清除体内的死亡组织，可以让你的身体更有效地自我恢复
         </p>
     </div>
     <div>
