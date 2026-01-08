@@ -14,7 +14,7 @@ keywords: Traditional, Chinese, Medicine, Acupuncture, Herbal, Therapy
         </p>
     </div>
     <div>
-        <a href="./blog.html" style="font-weight: bold; color: #0056b3; float:left">访问我们的博客</a>&nbsp;请发表评论或提问 
+        <a href="./blog.html" style="font-weight: bold; color: #0056b3; float:left">请访问我们的博客</a>&nbsp;发表评论或提问 
     </div>
  </section>
 
