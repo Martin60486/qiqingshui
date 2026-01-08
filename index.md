@@ -25,11 +25,9 @@ keywords: Traditional, Chinese, Medicine, Acupuncture, Herbal, Therapy
 <!--   <h2>Our Services:</h2> -->
     <div class="service-list">
         <h3>药用成份</h3>
-        <ul>
-            <li>T1 Tax returns, including for self-employed</li>
-            <li>Personal information returns (e.g., T1134, T1135)</li>
-            <li>Tax planning</li>
-        </ul>
+        <p>
+        川
+        </p>
         <h3>用途</h3>
     <!--    <ul>
             <li>Corporate T2 tax returns</li>
@@ -44,21 +42,6 @@ keywords: Traditional, Chinese, Medicine, Acupuncture, Herbal, Therapy
         <p>
         每天两次将15-30毫升（或遵医嘱）七清水养元扶正剂涂在患处皮肤上待干爽后加以按摩、揉搓。
         </p>
-        <h3>Non-residents</h3>
-        <ul>
-            <li>Rental income (Section 216) returns</li>
-            <li>Pension income (Section 217) returns</li>
-            <li>Other personal and corporate income tax returns for non-residents</li>
-            <li>Tax planning</li>
-        </ul>
-        <h3>Not-for-profit accounting</h3>
-        <ul>
-            <li>Full-cycle fund accounting for not-for-profit organizations</li>
-            <li>Budgeting</li>
-            <li>Fund reporting</li>
-            <li>GST refund claim</li>
-            <li>Charity information return</li>
-        </ul>
     </div>
 </section>
 

@@ -7,16 +7,16 @@ function loadContactHTML() {
             <div class="contact">
                 <div class="contact-header">
                     <img src="./assets/images/telephone.jpg" alt="Contact image" class="contact-image">                  
-                    <h2>Contact us:</h2>
+                    <h2>联系我们:</h2>
                 </div>
                 <div class="contact-info">
                     <p style="margin-bottom: 0;">
-                        Email: <a href="mailto:info@expaccounting.ca" class="email-link">info@expaccounting.ca</a><br>
-                        Phone: 604-838-9028; 778-918-8898<br>
-                        Feel free to reach out via email or telephone for any inquiries!
+                        Email: <a href="mailto:info@expaccounting.ca" class="email-link">zenwellness@outlook.com</a><br>
+                        Phone: 604-428-0896<br>
+                        欢迎Email或电话联系我们!
                     </p>
                     <p style="margin-top: 0;">
-                        <a href="./blog.html" style="font-weight: bold; color: #0056b3;">Visit our Blog</a> to ask questions!
+                        <a href="./blog.html" style="font-weight: bold; color: #0056b3;">请访问我们的博客</a> 发表评论或提问!
                     </p>
                 </div>
                
@@ -31,12 +31,12 @@ function loadContactHTML() {
                 <div class="contact-info">
                     <h2>Contact us:</h2>
                     <p style="margin-bottom: 0;">
-                        Email: <a href="mailto:info@expaccounting.ca" class="email-link">info@expaccounting.ca</a><br>
-                        Phone: 604-838-9028; 778-918-8898<br>
-                        Feel free to reach out via email or telephone for any inquiries!
+                        Email: <a href="mailto:info@expaccounting.ca" class="email-link">zenwellness@outlook.com</a><br>
+                        Phone: 604-428-0896<br>
+                        欢迎Email或电话联系我们!
                     </p>
                     <p style="margin-top: 0;">
-                        <a href="./blog.html" style="font-weight: bold; color: #0056b3;">Visit our Blog</a> to ask questions!
+                        <a href="./blog.html" style="font-weight: bold; color: #0056b3;">请访问我们的博客</a> 发表评论或提问!
                     </p>
                 </div>
             </div>

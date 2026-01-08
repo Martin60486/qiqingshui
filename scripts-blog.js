@@ -21,8 +21,8 @@ async function loadCategories() {
         categorySelect.appendChild(defaultOption);
         categories.forEach((category) => {
             const option = document.createElement("option");
-            option.value = category.id;
-            option.textContent = category.name;
+            option.value = 7;//category.id;
+            option.textContent = "Others";//category.name;
             categorySelect.appendChild(option);
         });
     } catch (error) {
@@ -49,11 +49,11 @@ function applyCollapsibleFunctionality() {
 async function submitQuestion(event) {
     event.preventDefault();
     const name = document.getElementById("name").value || "Anonymous";
-    const category = document.getElementById("category").value;
+    const category = "Others"; //document.getElementById("category").value;
     const question = document.getElementById("question").value;
 
     if (!category || !question) {
-        alert("Please fill out the category and question fields.");
+        alert("请输入评论或提问");
         return;
     }
 
@@ -75,7 +75,7 @@ async function submitQuestion(event) {
 async function loadQuestions() {
     try {
         const { data: questions, error } = await mySupabase
-            .from("questions")
+            .from("blogqqs")
             .select("*") // Ensure no unnecessary filters
             .order("category_id", { ascending: true })
             .order("id", { ascending: true });

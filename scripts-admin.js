@@ -15,7 +15,7 @@ async function loadQuestions() {
     }
 
     const { data: questions, error } = await asupabase
-      .from('questions')
+      .from('blogqqs')
       .select('*')
       .order('id', { ascending: false });
 
@@ -67,8 +67,8 @@ function renderQuestionCard(q, container) {
 
     <!-- Action buttons -->
     <div class="actions" style="margin-top: 6px;">
-      <button class="save-btn" onclick="saveChanges(${q.id})">Save</button>
-      <button class="delete-btn" onclick="deleteQuestion(${q.id})">Delete</button>
+      <button class="save-btn" onclick="saveChanges(${q.id})">保存</button>
+      <button class="delete-btn" onclick="deleteQuestion(${q.id})">删除</button>
     </div>
   `;
 
