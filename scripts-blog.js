@@ -49,7 +49,7 @@ function applyCollapsibleFunctionality() {
 async function submitQuestion(event) {
     event.preventDefault();
     const name = document.getElementById("name").value || "Anonymous";
-    const category = "Others"; //document.getElementById("category").value;
+    const category = 7; //document.getElementById("category").value;
     const question = document.getElementById("question").value;
 
     if (!category || !question) {
@@ -60,7 +60,7 @@ async function submitQuestion(event) {
     try {
         const { error } = await mySupabase
             .from("questions")
-            .insert([{ name, category_id: category, question }]);
+           
         if (error) throw error;
 
         alert("Question submitted successfully!");
