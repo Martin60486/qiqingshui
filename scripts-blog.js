@@ -8,7 +8,7 @@ async function loadCategories() {
         const { data: categories, error } = await mySupabase
             .from("categories")
             .select("*")
-            .order("id", { ascending: true });
+            .order("id", { ascending: false });
         if (error) throw error;
 
         const categorySelect = document.getElementById("category");
@@ -68,7 +68,7 @@ async function submitQuestion(event) {
         loadQuestions(); // Reload questions after submission
     } catch (error) {
         console.error("Error submitting question:", error);
-        alert("Failed to submit comment/question. Please try again.");
+        alert("提交失败，请重试.");
     }
 }
 
@@ -79,7 +79,7 @@ async function loadQuestions() {
             .from("blogqqs")
             .select("*") // Ensure no unnecessary filters
            // .order("category_id", { ascending: true })
-            .order("id", { ascending: true });
+            .order("id", { ascending: false });
         if (error) throw error;
 
         const container = document.getElementById("questions-container-blog");
