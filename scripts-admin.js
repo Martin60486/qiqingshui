@@ -14,7 +14,7 @@ async function loadQuestions() {
       return;
     }
 
-    const { data: questions, error } = await asupabase
+    const { data: blogqqs, error } = await asupabase
       .from('blogqqs')
       .select('*')
       .order('id', { ascending: false });
@@ -22,7 +22,7 @@ async function loadQuestions() {
     if (error) throw error;
 
     container.innerHTML = ''; // Clear old questions
-    questions.forEach((q) => renderQuestionCard(q, container));
+    blogqqs.forEach((q) => renderQuestionCard(q, container));
   } catch (error) {
     console.error('Error loading questions:', error.message, error.stack);
     alert('Failed to load questions. Please try again later.');
@@ -101,7 +101,7 @@ async function saveChanges(id) {
 
   try {
     const { error } = await asupabase
-      .from('questions')
+      .from('blogqqs')
       .update({ question: updatedQuestion, answer: updatedAnswer })
       .eq('id', id);
 
@@ -122,7 +122,7 @@ async function deleteQuestion(id) {
 
   try {
     const { error } = await asupabase
-      .from('questions')
+      .from('blogqqs')
       .delete()
       .eq('id', id);
 

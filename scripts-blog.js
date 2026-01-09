@@ -49,7 +49,7 @@ function applyCollapsibleFunctionality() {
 async function submitQuestion(event) {
     event.preventDefault();
     const name = document.getElementById("name").value || "Anonymous";
-    const category = 7; //document.getElementById("category").value;
+    //const category = document.getElementById("category").value;
     const question = document.getElementById("question").value;
 
     if (!category || !question) {
@@ -59,32 +59,32 @@ async function submitQuestion(event) {
 
     try {
         const { error } = await mySupabase
-            .from("questions")
+            .from("blogqqs")
            
         if (error) throw error;
 
-        alert("Question submitted successfully!");
+        alert("Comment/Question submitted successfully!");
         loadQuestions(); // Reload questions after submission
     } catch (error) {
         console.error("Error submitting question:", error);
-        alert("Failed to submit question. Please try again.");
+        alert("Failed to submit comment/question. Please try again.");
     }
 }
 
 // Load Questions
 async function loadQuestions() {
     try {
-        const { data: questions, error } = await mySupabase
+        const { data: blogqqs, error } = await mySupabase
             .from("blogqqs")
             .select("*") // Ensure no unnecessary filters
-            .order("category_id", { ascending: true })
+           // .order("category_id", { ascending: true })
             .order("id", { ascending: true });
         if (error) throw error;
 
         const container = document.getElementById("questions-container-blog");
         container.innerHTML = "";
 
-        questions.forEach((q) => {
+        blogqqs.forEach((q) => {
             const questionCard = document.createElement("details");
             questionCard.innerHTML = `
                 <summary class="summary-question">${q.question}</summary>
@@ -110,7 +110,7 @@ async function loadQuestions() {
 }
 // Initialize Page
 document.addEventListener("DOMContentLoaded", () => {
-    loadCategories();
+   // loadCategories();
     loadQuestions();
 });
 
