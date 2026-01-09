@@ -60,6 +60,7 @@ async function submitQuestion(event) {
     try {
         const { error } = await mySupabase
             .from("blogqqs")
+            .insert([{ name, question }]);
            
         if (error) throw error;
 
@@ -114,4 +115,8 @@ document.addEventListener("DOMContentLoaded", () => {
     loadQuestions();
 });
 
-document.getElementById("question-form").addEventListener("submit", submitQuestion);
+//document.getElementById("question-form").addEventListener("submit", submitQuestion);
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("question-form");
+  if (form) form.addEventListener("submit", submitQuestion);
+});
