@@ -52,7 +52,7 @@ async function submitQuestion(event) {
     //const category = document.getElementById("category").value;
     const question = document.getElementById("question").value;
 
-    if (!category || !question) {
+    if (!question) {
         alert("请输入评论或提问");
         return;
     }
@@ -63,7 +63,7 @@ async function submitQuestion(event) {
            
         if (error) throw error;
 
-        alert("Comment/Question submitted successfully!");
+        alert("提交成功!");
         loadQuestions(); // Reload questions after submission
     } catch (error) {
         console.error("Error submitting question:", error);
