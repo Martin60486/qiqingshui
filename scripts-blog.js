@@ -90,7 +90,7 @@ async function loadQuestions() {
             questionCard.innerHTML = `
                 <summary class="summary-question">${q.question}</summary>
                 <div class="author">
-                    Asked by ${q.name || "Anonymous"};&nbsp; Answered by EXP
+                    ${q.name || "Anonymous"}问;&nbsp; 七清水回答：
                 </div>
                 <div class="answer-details">
                     ${

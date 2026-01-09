@@ -59,7 +59,7 @@ function renderQuestionCard(q, container) {
     </p>
 
     <!-- Answer section -->
-    <p style="margin: 6px 0 4px 0;"><strong>Answered by EXP:</strong></p>
+    <p style="margin: 6px 0 4px 0;"><strong>七清水答:</strong></p>
     <pre contenteditable="true" data-id="${q.id}" data-field="answer"
          style="white-space: pre-wrap; margin: 0; background-color: #fff8e1; border: none;">
       ${q.answer || ''}
