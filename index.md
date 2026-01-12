@@ -26,7 +26,7 @@ keywords: Traditional, Chinese, Medicine, Acupuncture, Herbal, Therapy
     <div class="service-list">
         <h3>药用成份</h3>
         <p>
-        川
+        芎川、羌活、三七、威灵仙、透骨草、五加皮、大血藤、鸡屎藤、桂枝、红花、虎杖、白酒。
         </p>
         <h3>用途</h3>
     <!--    <ul>
