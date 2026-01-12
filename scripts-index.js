@@ -11,7 +11,7 @@ function loadContactHTML() {
                 </div>
                 <div class="contact-info">
                     <p style="margin-bottom: 0;">
-                        Email: <a href="mailto:info@expaccounting.ca" class="email-link">zenwellness@outlook.com</a><br>
+                        Email: <a href="mailto:zenwellness@outlook.com" class="email-link">zenwellness@outlook.com</a><br>
                         Phone: 604-428-0896<br>
                         欢迎Email或电话联系我们!
                     </p>
@@ -31,7 +31,7 @@ function loadContactHTML() {
                 <div class="contact-info">
                     <h2>Contact us:</h2>
                     <p style="margin-bottom: 0;">
-                        Email: <a href="mailto:info@expaccounting.ca" class="email-link">zenwellness@outlook.com</a><br>
+                        Email: <a href="mailto:zenwellness@outlook.com" class="email-link">zenwellness@outlook.com</a><br>
                         Phone: 604-428-0896<br>
                         欢迎Email或电话联系我们!
                     </p>
