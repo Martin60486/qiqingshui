@@ -26,7 +26,7 @@ function loadContactHTML() {
         container.innerHTML = `
             <div class="contact">
                 <div class="contact-image-wrapper">
-                    <img src="./assets/images/telephone.jpg" alt="Contact image" class="contact-image">    
+                    <img src="/assets/images/telephone.jpg" alt="Contact image" class="contact-image">    
                 </div>
                 <div class="contact-info">
                     <h2>Contact us:</h2>
