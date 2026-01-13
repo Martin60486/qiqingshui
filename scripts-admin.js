@@ -49,7 +49,7 @@ function renderQuestionCard(q, container) {
   questionCard.innerHTML = `
     <!-- Name and date on the same line -->
     <p style="margin: 0; padding: 0;">
-      <strong>Asked by:</strong> ${q.name || 'Anonymous'}&nbsp;${formattedTime}
+      <strong>Asked by:</strong> ${q.name || '客户'}&nbsp;${formattedTime}
     </p>
 
     <!-- Question text, left-aligned and close to name line -->

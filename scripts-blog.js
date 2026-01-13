@@ -48,7 +48,7 @@ function applyCollapsibleFunctionality() {
 // Submit Question
 async function submitQuestion(event) {
     event.preventDefault();
-    const name = document.getElementById("name").value || "Anonymous";
+    const name = document.getElementById("name").value || "客户";
     //const category = document.getElementById("category").value;
     const question = document.getElementById("question").value;
 
