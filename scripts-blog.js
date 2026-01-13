@@ -88,7 +88,7 @@ async function loadQuestions() {
         blogqqs.forEach((q) => {
             const questionCard = document.createElement("details");
             questionCard.innerHTML = `
-                <summary class="summary-question">${q.name || "未署名"}：${q.question}</summary>
+                <summary class="summary-question">${q.name || "客户"}：${q.question}</summary>
                 <div class="author">
                     七清水回答：
                 </div>
