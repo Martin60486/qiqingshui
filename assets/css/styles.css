@@ -152,7 +152,8 @@ body {
         position: absolute;
         top: 10px;
         left: 10px;
-        height: 24px;
+        height: 24px !important;
+        width: auto !important;
     }
     .text-content {
         margin-top: 0px;

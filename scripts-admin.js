@@ -77,7 +77,7 @@ function renderQuestionCard(q, container) {
 }
 
   
-//    <p><strong>Asked by:</strong> ${q.name || 'Anonymous'}</p>  note: this is replaced by the line with data
+//    <p><strong>Asked by:</strong> ${q.name || '客户'}</p>  note: this is replaced by the line with data
 // Save Changes
 async function saveChanges(id) {
   const questionElement = document.querySelector(`[data-id="${id}"][data-field="question"]`);
