@@ -1,8 +1,9 @@
 title: Qi Qing Shui Chinese Medicine
 description: "Traditional Chinese Medicine, Acupuncture, Herbal Therapy"
 keywords: "Tranditional, Chinese, Medicine, Herbal, Therapy, Acupuncture"
-baseurl: "/qiqingshui" 
-url: "https://martin60486.github.io"
+url: "https://qiqingshui.com"
+baseurl: "" 
+#url: "https://martin60486.github.io"
 
 
 
