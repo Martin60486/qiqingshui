@@ -74,41 +74,45 @@ async function submitQuestion(event) {
 
 // Load Questions
 async function loadQuestions() {
-    try {
-        const { data: blogqqs, error } = await mySupabase
-            .from("blogqqs")
-            .select("*") // Ensure no unnecessary filters
-           // .order("category_id", { ascending: true })
-            .order("id", { ascending: false });
-        if (error) throw error;
+    const container = document.getElementById("questions-container-blog");
+    if (container) {
+        container.innerHTML = "<p>Loading…</p>";
+    }
 
-        const container = document.getElementById("questions-container-blog");
+    try {
+        // Read from local static JSON (fast in China)
+        const res = await fetch("./assets/data/blog.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("Failed to load blog.json");
+
+        const blogqqs = await res.json();
+
+        if (!container) return;
         container.innerHTML = "";
 
         blogqqs.forEach((q) => {
             const questionCard = document.createElement("details");
             questionCard.innerHTML = `
-                <summary class="summary-question">${q.name || "客户"}：${q.question}</summary>
-                <div class="author">
-                    七清水回答：
-                </div>
+                <summary class="summary-question">${q.name || ""}：${q.question || ""}</summary>
+                <div class="author">七清水回答：</div>
                 <div class="answer-details">
-                    ${
-                        q.answer
-                            ? q.answer
-                                  .split("\n")
-                                  .map(line => `<div>${line.trim()}</div>`)
-                                  .join("")
-                            : "<em>No answer yet</em>" // Placeholder for empty answers
-                    }
+                    ${(q.answer ? q.answer.split('\n').map(line => `<div>${(line || "").trim()}</div>`).join('') : "<em>（暂无回复）</em>")}
                 </div>
             `;
             container.appendChild(questionCard);
         });
     } catch (error) {
-        console.error("Error loading questions:", error);
+        console.error("Error loading blog.json:", error);
+        if (container) {
+            container.innerHTML = `
+                <p>加载失败或较慢（可能是跨境网络原因）。请稍后重试。</p>
+                <button id="retry-load">Retry</button>
+            `;
+            const btn = document.getElementById("retry-load");
+            if (btn) btn.addEventListener("click", loadQuestions);
+        }
     }
 }
+
 // Initialize Page
 document.addEventListener("DOMContentLoaded", () => {
    // loadCategories();
