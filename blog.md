@@ -16,6 +16,8 @@ keywords: Traditional, Chinese, Medicine, Acupuncture, Herbal, Therapy
     <button type="submit"><i class="fas fa-paper-plane"></i> 提交</button>
 </form>
 
+<div id="submit-status" style="margin-top: 12px;"></div>
+
 <section id="questions-container-blog">
     <!-- Questions will be displayed dynamically -->
 </section>
